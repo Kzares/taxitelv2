@@ -23,7 +23,7 @@ function Drivers({driver}) {
 export default Drivers
 
 export async function getStaticProps({params}){
-  const data = await getProfile(params.slug)
+  const data = getProfile(params.slug)
   
   return {
     props: { driver: data}
